@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Port Scanning Script in Lua</title>
+</head>
+<body>
+    <h1>Port Scanning Script in Lua</h1>
+    <p><b>Description:</b> Simple port scanner script written in Lua.</p>
+    <p><b>Author:</b> Anjeeshnu</p>
+    <p><b>Categories:</b> default, safe</p>
+    <h2>Usage</h2>
+    <p>Usage: <code>nmap -sC -sV -p <i>portrange</i> --script=<i>scriptname</i> <i>target</i></code></p>
+    <p>Example: <code>nmap -sC -sV -p 1-100 --script=portscan.lua localhost</code></p>
+    <h2>Output</h2>
+    <pre>
+    Nmap scan report for localhost (127.0.0.1)
+    Host is up (0.000038s latency).
+
+    PORT   STATE SERVICE VERSION
+    22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+    80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+    </pre>
+</body>
+</html>
